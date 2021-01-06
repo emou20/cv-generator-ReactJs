@@ -1,0 +1,22 @@
+[
+    {
+       "id":"1",
+       "nom":"Model numéro 01",
+       "photo":"model01.jpg"
+    },
+    {
+        "id":"2",
+        "nom":"Model numéro 02",
+        "photo":"model02.jpg"
+     },
+     {
+        "id":"3",
+        "nom":"Model numéro 03",
+        "photo":"model03.jpg"
+     },
+     {
+        "id":"4",
+        "nom":"Model numéro 04",
+        "photo":"model04.jpg"
+     }
+ ]

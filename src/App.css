@@ -1,38 +1,668 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;600&family=Kanit:wght@300;400;700&display=swap');
+body {
+  font-family: 'Kanit', sans-serif;
+  outline: none;
+}
+
+/******************* header css **/
+.headerBandeHaut {
+  background-color: rgb(0,0,0,0.7);
+  height: 80px;
+  padding: 15px 0px;
+  position: absolute;
+  top: 0;
+}
+.logoApp {
+  width: 131px;
+  height: 60px;
+  display: block;
+  float: left;
+  background-image: url(img/logo.png);
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+.contIcons {
+  float: right;
+  height: 80px;
+  color: #fff;
+}
+.lineIcon {
+  color: #fff;
+  font-size: 25px;
+  display: inline
+}
+/**** home css **/
+.container-home {
+  /*width: 100vw;*/
+  height: 100vh;
+  background-image: url(img/bghome.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contCVSlogan {
+  padding-top: 200px;
+  text-align: center;
+}
+.titreSloganHome {
+  text-align: center;
+  font-size: 58px;
+  color: #ffffff;
+  width: 100%;
+  margin-bottom: 50px;
+  font-family: 'Kanit', sans-serif;
+
+}
+.bttCommencer {
+  cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.3;
+    padding: 12px 15px;
+    border: 3px solid #00c293;
+    text-align: center;
+    background: #00c293;
+    color: #fff;
+    transition: all 0.5px;
+}
+.bttCommencer:hover {
+  text-decoration: none;
+  color: #fff;
+  margin-top: -3px;
+}
+/**** step css **/
+
+.globalStep {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.contentCvcoord {
+  width: 100%;
+  float: left;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.contentPhotoCoord {
+  width: 25%;
+  float: left;
+  height: 250px;
+  text-align: center;
+}
+.contentResteFormCoord {
+  width: 73%;
+  float: left;
+  margin-left: 2%;
+}
+.photoModel {
+  max-height: 180px;
+  width: auto;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.errorPhoto {
+  display: block;
+  color: red;
+  font-size: 12px;
+}
+.bttUploadPhoto {
+  border: none;
+  background-color: #00c293;
+  color: #fff;
+  font-family: 'Kanit', sans-serif;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-weight: 300;
+}
+.formCv input,  .formCv div{
+  width: 100%;
+
+}
+.formCv .MuiTextField-root{
+  margin-bottom: 15px;
+}
+.formCv .MuiFormControl-root .MuiFormLabel.Mui-focused {
+  color: #00c293 !important;
+
+}
+.bttSuivant {
+  color: #fff;
+  background-color:  #00c293;
+  border: none;
+  padding: 5px 15px;
+  font-weight: 400;
+  font-family: 'Kanit', sans-serif;
+  border-radius: 15px;
+  -webkit-box-shadow: -1px 10px 6px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 10px 6px -10px rgba(0,0,0,0.75);
+box-shadow: -1px 10px 6px -10px rgba(0,0,0,0.75);
+}
+
+/***** timeline **/
+.GlobaleTimeLine {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.GlobalbarreTimeline {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 3px;
+}
+.part1BarreTimeline, .part2BarreTimeline, .part3BarreTimeline, .part4BarreTimeline{
+  float: left;
+  width: 25%;
+  height: 3px;
+  text-align: center;
+  background-color: darkgrey;
+  color: darkgrey;
+}
+.part1BarreTimeline.active, .part2BarreTimeline.active, .part3BarreTimeline.active, .part4BarreTimeline.active{
+  background-color: #00c293;
+  color: #00c293;
+}
+
+.part1BarreTimeline svg, .part2BarreTimeline svg, .part3BarreTimeline svg, .part4BarreTimeline svg{
+  margin-top: -63px;
+}
+
+.part1BarreTimeline span, .part2BarreTimeline span, .part3BarreTimeline span, .part4BarreTimeline span{
+  margin-top: -20px;
+  display: block;
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.MuiGrid-item {
+  float: left;
+  padding-right:15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#date-picker-dialog {
+  width: 80%;
+  float: left;
+  display: block;
+}
+.MuiInput-underline .MuiInputAdornment-root.MuiInputAdornment-positionEnd{
+  width: 20%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.contBttAdd {
+  text-align: right;
 }
 
-.App-link {
-  color: #61dafb;
+.MuiPaper-root.MuiCard-root {
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+}
+.contfild50 {
+  float: left;
+  width: 50% !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.suppresteform {
+  width: 66%;
+  float: left;
+  display: block;
+
+}
+.suppphotodemo {
+  width: 33%;
+  float: left;
+  display: block;
+
+}
+
+/***** page recap **/
+
+.ConteInfosPerso {
+  width: 100%;
+  padding: 25px;
+  float: left;
+  margin-top: 30px;
+}
+.contImg {
+  float: left;
+  width: 25%;
+
+}
+.contImgMod2 {
+  float: left;
+  width: 100%;
+
+}
+.contResteInfosP {
+  float: left;
+  width: 75%;
+  padding:0px 15px;
+}
+.nomPersonne {
+  width: 100%;
+  padding: 0px;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 38px;
+  float: left;
+}
+.fonctionPersonne {
+  width: 100%;
+  float: left;
+  color: #000;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.PresentationPersonne {
+  width: 100%;
+  float: left;
+  color: #000;
+  font-size: 16px;
+}
+.contCoordonnee {
+  width: 100%;
+  float: left;
+  height: auto;
+  background-color: #00c293;
+  -webkit-print-color-adjust: exact;
+     color-adjust: exact;
+}
+.contCoordonneeMod2 {
+  width: 100%;
+  float: left;
+  height: auto;
+
+}
+.boxTel, .boxEmail, .boxAdress {
+  width: 33.33%;
+  float: left;
+  padding-top: 20px;
+  padding: 20px;
+  color: #444;
+  font-family: 'Kanit', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+
+}
+
+.boxTel{
+  width: 20%;
+}
+.boxEmail{
+  width: 40%;
+}
+.boxAdress {
+  width: 40%;
+}
+
+.boxTelMod2, .boxEmailMod2, .boxAdressMod2{
+  width: 100%;
+  color: #fff;
+  padding: 10px;
+}
+
+
+.contCompetances {
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  border-bottom: 1px #ccc solid;
+}
+.contCompetances::before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #ccc;
+  position: absolute;
+  left: 50%;
+}
+
+
+.contCompetancesMod2 {
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.contCompetancesMod2::before {
+ display: none;
+}
+.conpetanceLogiciels {
+  width: 50%;
+  padding: 15px;
+  float: left;
+}
+.conpetanceTechniques {
+  width: 50%;
+  padding: 15px;
+  float: left;
+}
+.conpetanceLogicielsMod2 {
+  width: 100%;
+  padding: 15px;
+  float: left;
+  color: #fff;
+}
+.conpetanceTechniquesMod2 {
+  width: 100%;
+  padding: 15px;
+  float: left;
+  color: #fff;
+}
+.titreBlockCompt {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  font-family: 'Kanit', sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  color: #000;
+}
+.ligneCompt {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+}
+.titreCompt {
+  width: 65%;
+  float: left;
+  padding: 5px 0px;
+  color: #444;
+  margin-right: 5%;
+  font-size: 18px;
+}
+.niveauCompt {
+  width: 30%;
+  float: left;
+  padding: 5px 0px;
+  color:#00c293;
+  font-size: 18px;
+  
+}
+
+.titreComptMod2 {
+  width: 65%;
+  float: left;
+  padding: 5px 0px;
+  color: #fff;
+  margin-right: 5%;
+  font-size: 18px;
+}
+.niveauComptMod2 {
+  width: 30%;
+  float: left;
+  padding: 5px 0px;
+  color:#fff;
+  font-size: 18px;
+  
+}
+
+
+.titreComptMod2 {
+  width: 65%;
+  float: left;
+  padding: 5px 0px;
+  color: #fff;
+  margin-right: 5%;
+  font-size: 18px;
+}
+.niveauComptMod2 {
+  width: 30%;
+  float: left;
+  padding: 5px 0px;
+  color:#fff;
+  font-size: 18px;
+  
+}
+
+.contExperience {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.ligneExperience {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  padding: 15px 0px;
+  border-bottom: 1px #ccc solid;
+
+}
+
+.dateExp {
+  width: 25%;
+  color:#00c293;
+  font-size: 18px;
+  font-weight: 500;
+  float: left;
+
+}
+.resteExp {
+  float: left;
+  width: 73%;
+  margin-left: 2%;
+
+}
+
+.dateExpMod2 {
+  width: 40%;
+  color:#0070c1;
+  font-size: 18px;
+  font-weight: 500;
+  float: left;
+
+}
+.resteExpMod2 {
+  float: left;
+  width: 58%;
+  margin-left: 2%;
+
+}
+
+.dateExpMod2 {
+  width: 40%;
+  color:#0070c1;
+  font-size: 18px;
+  font-weight: 500;
+  float: left;
+
+}
+.resteExpMod2 {
+  float: left;
+  width: 58%;
+  margin-left: 2%;
+
+}
+.posteExp {
+  color:#00c293;
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+}
+.posteExpMod2 {
+  color:#0070c1;
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+}
+.EmplyeurExp {
+  color:#000;
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.Post{
+  max-width:1000px;
+  width: 100%;
+  display: table;
+  margin: 0 auto;
+  padding: 20px 50px;
+  height: 1000px;
+  margin-top:80px;
+}
+
+.contbttgenererpdf{
+  max-width: 1000px;
+  width: 100%;
+  display: table;
+  margin: 0 auto;
+  padding: 20px 50px;
+}
+.contbttGeneratePdf {
+  margin-top: 25px;
+  padding-top: 30px;
+  display: block;
+    overflow: hidden;
+}
+.pdfPost {
+  margin: 50px;
+  scale: 2;
+}
+
+
+.custom-file-input_a::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input_a::before {
+  content: 'Choisissez une photo';
+    display: inline-block;
+    border: none;
+    border-radius: 3px;
+    padding: 12px 5px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+}
+
+.button--no-bottom-border {
+  border-bottom: 0px;
+}
+button:focus {
+  outline: none !important;
+}
+input, button, a {
+  outline: none !important;
+}
+
+.contCVSlogan {
+  height: 510px;
+}
+
+.contRestehome {
+  background-color: #fff;
+  padding: 25px;
+  min-height: auto;
+  height: auto;
+  float: left;
+}
+.boxCommentMarche {
+  width: 32.33%;
+  float: left;
+  margin: 0.5%;
+  padding: 25px;
+}
+.titreBoxComment {
+  width: 100%;
+  color: #00c293;
+  font-size: 23px;
+  font-weight: 500;
+  padding-bottom: 15px;
+  position: relative;
+  font-family: 'Kanit', sans-serif;
+
+}
+.contRestehome h2 {
+  color: #000;
+  font-size: 33px;
+  font-family: 'Kanit', sans-serif;
+  border-bottom: 1px #eee solid;
+  padding-bottom: 15px;
+  text-align: center;
+}
+.box1, .box2, .box3{
+  position: relative;
+  padding-left: 30px;
+}
+.box1::before {
+  content: "1";
+  width: 25px;
+  height: 25px;
+  background-color: #00c293;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  position: absolute;
+  left: 0;
+  top: 30px;
+  border-radius: 50%;
+}
+
+.box2::before {
+  content: "2";
+  width: 25px;
+  height: 25px;
+  background-color: #00c293;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  position: absolute;
+  left: 0;
+  top: 30px;
+  border-radius: 50%;
+}
+.box3::before {
+  content: "3";
+  width: 25px;
+  height: 25px;
+  background-color: #00c293;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  position: absolute;
+  left: 0;
+  top: 30px;
+  border-radius: 50%;
+}
+
+.boxModel {
+  height: 350px;
+  margin-top: 10px;
+
+}
+.boxModel img{
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+  
+}
+.leftColMod2 {
+  width: 30%;
+  float: left;
+  background-color: #0070c1;
+  -webkit-print-color-adjust: exact;
+     color-adjust: exact;
+}
+.rightColMod2 {
+  width: 70%;
+  float: right;
+  padding: 15px;
+}
+
+
+
+@media print {
+  .headerBandeHaut {display:none;}
+  .contbttgenererpdf{display:none;}
 }
